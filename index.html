@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Courgette&family=Jacques+Francois+Shadow&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Courgette&family=Jacques+Francois+Shadow&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://i.pinimg.com/736x/95/9c/9d/959c9d564c587cb95c396cf2e4961c97.jpg");
+             }
+
+        .head {
+            
+            font-family: "Barrio", system-ui;
+            font-size: 12vh;
+            text-align: left;
+            margin-top: 10vh;
+            margin-left: 8vh;
+            
+        }
+
+        .box{
+            height: 60vh;
+            width: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow:  7px 7px 5px rgba(6, 6, 6, 0.662);
+            border: 2px solid black;
+            margin-left: 24vh;
+            margin-top: 3vh;
+        }
+
+input{
+    padding: 10px;
+    width: 45%;
+    border-radius: 20px;
+    border: none;
+    margin: 7vh;
+    font-size: 4vh;
+
+}
+button{
+    padding: 10px;
+    font-size: 4vh;
+    width: 50%;
+    cursor: pointer;
+    border: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.65,-0.25,0.25,1.95);
+    box-shadow: 0 7px 7px -6px black;
+    background-color: white;
+}
+
+button:hover ,button:focus, button:active{
+    letter-spacing: 0.125rem;
+    word-spacing: 0.2rem;
+}
+
+.input{
+    display: none;
+    text-align: center;
+     font-family: "Oswald", sans-serif;
+}
+
+.msg{
+    font-size: 5vh;
+    font-family: "Oswald", sans-serif;
+}
+    </style>
+</head>
+
+<body>
+
+
+    <header class="head">
+     Guess The Correct Word
+    </header>
+    <div class="box">
+        <p class="msg"></p>
+        <input type="text" placeholder="Type here" class="input">
+        <button class="button">Click here to start</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
